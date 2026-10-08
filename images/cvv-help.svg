@@ -1,0 +1,13 @@
+<svg width="320" height="176" viewBox="0 0 320 176" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Verso do cartão com o CVV destacado ao lado da faixa de assinatura">
+  <rect x="8" y="8" width="304" height="160" rx="14" fill="#DDCEF5"/>
+  <rect x="8" y="30" width="304" height="38" fill="#170035"/>
+  <rect x="24" y="86" width="176" height="32" rx="4" fill="#FFFFFF"/>
+  <path d="M34 106c8-12 14-12 20 0s14 12 22 0 14-12 22 0 12 8 20-2" stroke="#B1B1D0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="214" y="86" width="74" height="32" rx="4" fill="#FFFFFF"/>
+  <text x="251" y="108" text-anchor="middle" font-family="Omnes, Arial, sans-serif" font-size="18" font-weight="700" fill="#170035" letter-spacing="2">467</text>
+  <rect x="208" y="80" width="86" height="44" rx="8" stroke="#D400CA" stroke-width="3" stroke-dasharray="6 5"/>
+  <rect x="226" y="62" width="50" height="22" rx="11" fill="#D400CA"/>
+  <text x="251" y="77" text-anchor="middle" font-family="Omnes, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">CVV</text>
+  <rect x="24" y="134" width="60" height="8" rx="4" fill="#B49BE0"/>
+  <rect x="94" y="134" width="40" height="8" rx="4" fill="#B49BE0"/>
+</svg>
