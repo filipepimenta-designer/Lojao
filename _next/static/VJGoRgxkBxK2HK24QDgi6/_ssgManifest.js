@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fmarcas\u002F[id]","\u002Fproduto\u002F[id]","\u002Fvitrine\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
