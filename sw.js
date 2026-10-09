@@ -3,7 +3,7 @@
  * README > "Instalar como app"). Estratégia "rede primeiro": online sempre busca a versão nova
  * (nada de tela velha depois de publicar); a cópia guardada só é usada sem internet.
  */
-const CACHE = 'lojao-prototipo-v1';
+const CACHE = 'lojao-prototipo-v2';
 
 self.addEventListener('install', (event) => {
   // Já guarda a Home pra abrir mesmo sem internet na primeira vez.
@@ -27,6 +27,9 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   // Só o próprio site e só leitura; o resto (API, links externos) passa direto.
   if (request.method !== 'GET' || url.origin !== self.location.origin) return;
+  // Vídeo (Live) chega em pedaços (`Range` → resposta 206), que o Cache API não guarda — e não vale
+  // ocupar o celular com megas de vídeo. Vai direto pra rede.
+  if (request.destination === 'video' || request.headers.has('range')) return;
 
   event.respondWith(
     fetch(request)
